@@ -81,7 +81,8 @@
     $lastStep = $step;
 @endphp
 
-<script require="@dcat-admin.form-step">
+<script>
+Dcat.ready(function () {
     var form = $('#{{ $form->getElementId() }}'),
         box = form.find('.dcat-step-box'),
         stepInput = form.find('.current-step-input'),
@@ -300,5 +301,6 @@
     }
 
     toggleBtn();
+});
 </script>
 

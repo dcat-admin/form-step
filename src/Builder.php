@@ -236,7 +236,7 @@ class Builder
     protected function makeDefaultCompletionPage()
     {
         $this->done(function () {
-            $resource = $this->form->getResource(0);
+            $resource = $this->form->resource(0);
 
             $data = [
                 'title'       => trans('admin.save_succeeded'),
