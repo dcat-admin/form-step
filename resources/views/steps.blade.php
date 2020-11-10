@@ -115,7 +115,7 @@ Dcat.ready(function () {
                 $t.buttonLoading(false);
                 isSubmitting = 0;
                 
-                if (! data.status) {
+                if (typeof data.status !== 'undefined' && ! data.status) {
                     return Dcat.handleJsonResponse(data)
                 }
 
