@@ -8,5 +8,8 @@
 
 ### 安装
 
-下载`zip`压缩包，打开扩展管理页面，点击`本地安装`按钮选择提交，然后找到`form-step`行点击`启用`按钮。
+[扩展安装](http://www.dcatadmin.com/docs/2.x/extension-f.html)
+
+### 使用
+ [分步表单](http://www.dcatadmin.com/docs/2.x/model-form-step.html)
 
