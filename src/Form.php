@@ -179,9 +179,9 @@ HTML;
     protected function prepareFileFields()
     {
         $this->form->uploaded(function (ParentForm $form, ParentForm\Field $field, $file, $response) {
-            if (($value = $response->getData()) && ! empty($value->id)) {
+            if (($value = $response->toArray()) && ! empty($value['id'])) {
                 $form->multipleSteps()->stash(
-                    [$field->column() => $value->id],
+                    [$field->column() => $value['id']],
                     true
                 );
             }
